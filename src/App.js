@@ -18,9 +18,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <input className="App-task-input" type="text" placeholder="Title"
-          value={this.state.task} onChange={this.handleChange} />
-        <button className="App-add-btn" onClick={this.addTask}>Add Task</button>
+        <header className="App-header">
+          <input className="App-task-input" type="text" placeholder="Title"
+            value={this.state.task} onChange={this.handleChange} />
+          <button className="App-add-btn" onClick={this.addTask}>Add Task</button>
+        </header>
       </div>
     );
   }
