@@ -10,10 +10,39 @@
   margin-right: 0.5rem;
   border-radius: 5px;
   font-weight: 600;
+  width: 400px;
 }
 .App-add-btn{
   font-size: 1rem;
   padding: 0.5rem;
   border: none;
   border-radius: 8px;
+  background-color: #06a0e7;
+  color: white;
+}
+.todo{
+  display: grid;
+  margin-top: 1rem;
+  place-content: center;
+}
+.todo-item{
+  display: grid;
+  width: 450px;
+  background-color: #ddd;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+.todo-checkbox{
+  grid-column: 1;
+  width: min-content;
+  margin: 0.5rem;
+  margin-right: 1rem;
+}
+.todo-label{
+  margin-bottom: 0;
+  width: 420px;
+  grid-column: 2;
 }
