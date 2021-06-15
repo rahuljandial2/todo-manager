@@ -20,7 +20,7 @@
   background-color: #06a0e7;
   color: white;
 }
-.todo{
+.todos{
   display: grid;
   margin-top: 1rem;
   place-content: center;

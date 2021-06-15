@@ -1,17 +1,1 @@
-[
-  {
-    "id": 1,
-    "title": "This is 1st todo item",
-    "done": false
-  },
-  {
-    "id": 2,
-    "title": "This is 2nd todo item",
-    "done": true
-  },
-  {
-    "id": 3,
-    "title": "This is 3rd todo item",
-    "done": false
-  }
-]
+[]

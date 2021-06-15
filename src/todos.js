@@ -1,18 +1,24 @@
 import { Component } from "react";
 
-class Todos extends Component {
+class Todo extends Component {
+  handleCheckbox() {
+    this.props.changeCheckbox(this.props.index);
+  }
   render() {
     return (
-      <main className="todo">
-        {this.props.tasks.map((t, i) =>
-          <div className="todo-item" key={i}>
-            <input className="todo-checkbox" type="checkbox" id={t} name="" value="" checked={t.done} />
-            <label className="todo-label" htmlFor={t}>{t}</label>
-          </div>
-        )}
-      </main>
+      <div className="todo-item">
+        <input
+          id={this.props.index}
+          className="todo-checkbox"
+          type="checkbox"
+          checked={this.props.task.done}
+          onChange={this.handleCheckbox.bind(this)} />
+        <label className="todo-label" htmlFor={this.props.index}>
+          {this.props.task.title}
+        </label>
+      </div>
     );
   }
 }
 
-export default Todos;
+export default Todo;
