@@ -28,7 +28,7 @@ class App extends Component {
   }
   render() {
     let emptyTasks;
-    if (tasks.length == 0) {
+    if (tasks.length === 0) {
       emptyTasks = <h1>Looks like there is no task here...</h1>;
     } else {
       emptyTasks = null;

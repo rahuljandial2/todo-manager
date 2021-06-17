@@ -13,7 +13,7 @@ class Todo extends Component {
           type="checkbox"
           checked={this.props.task.done}
           onChange={this.handleCheckbox.bind(this)} />
-        <label className="todo-label" htmlFor={this.props.index}>
+        <label className={`todo-label ${this.props.task.done ? "todo-label-done" : ""}`} htmlFor={this.props.index}>
           {this.props.task.title}
         </label>
       </div>

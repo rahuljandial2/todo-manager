@@ -46,3 +46,7 @@
   width: 420px;
   grid-column: 2;
 }
+.todo-label-done{
+  text-decoration: line-through;
+  color: grey;
+}
